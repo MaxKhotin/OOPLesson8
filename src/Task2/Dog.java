@@ -14,17 +14,9 @@ public class Dog {
         this.hasLeash = hasLeash;
         this.ownerHasTreats = ownerHasTreats;
     }
-    boolean collarChecker(){
-        return this.hasCollar;
-    }
-    boolean leashChecker(){
-        return this.hasLeash;
-    }
-    boolean treatsChecker(){
-        return this.ownerHasTreats;
-    }
+
     void dogChecker() throws MyException{
-        if (collarChecker() && leashChecker() && treatsChecker()){
+        if (hasCollar && hasLeash && ownerHasTreats){
             System.out.println("It's safe to go for a walk");
         }
         else {
